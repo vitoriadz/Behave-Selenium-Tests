@@ -5,7 +5,6 @@ import time
 
 @given("that the user is on the form page")
 def step_given_user_on_form_page(context):
-    # Inicie o driver do Selenium e abra a página do formulário
     context.driver = webdriver.Chrome()
     context.form_page = FormPage(context.driver)
     context.form_page.open()
